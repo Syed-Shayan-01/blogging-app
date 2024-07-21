@@ -1,117 +1,59 @@
+import Logo from "@/components/user/logo/page"
 
 
 const Footer = () => {
     return (
         <>
-            <footer className="bg-white py-8">
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div>
-                            <h3 className="text-lg font-bold mb-2">About</h3>
-                            <p >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua.
-                            </p>
-                            <p className="mt-4">Email: info@example.net</p>
-                            <p>Phone: 880 123 456 789</p>
+            <footer class="bg-gray-50">
+                <div class="mx-auto grid max-w-screen-xl gap-y-8 gap-x-12 px-4 py-10 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
+                    <div class="max-w-sm">
+                        <div class="mb-6 flex h-12 items-center space-x-2">
+                            <Logo />
                         </div>
-                        <div>
-                            <h3 className="text-lg font-bold mb-2">Quick Link</h3>
-                            <ul className="space-y-2">
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        About
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Blog
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Archived
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Author
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Contact
-                                    </a>
-                                </li>
+                        <div class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad a officia ea expedita!</div>
+                    </div>
+                    <div class="">
+                        <div class="mt-4 mb-2 font-medium xl:mb-4">Address</div>
+                        <div class="text-gray-500">
+                            35 Remida Heights, <br />
+                            45 Street, <br />
+                            South Caroline, US
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="mt-4 mb-2 font-medium xl:mb-4">Links</div>
+                        <nav aria-label="Footer Navigation" class="text-gray-500">
+                            <ul class="space-y-3">
+                                <li><a class="hover:text-blue-600 hover:underline" href="#">Pricing</a></li>
+                                <li><a class="hover:text-blue-600 hover:underline" href="#">Demo</a></li>
+                                <li><a class="hover:text-blue-600 hover:underline" href="#">Press</a></li>
+                                <li><a class="hover:text-blue-600 hover:underline" href="#">Support Hub</a></li>
+                                <li><a class="hover:text-blue-600 hover:underline" href="#">Contact</a></li>
                             </ul>
-                        </div>
-                        <div>
-                            <h3 className="text-lg font-bold mb-2">Category</h3>
-                            <ul className="space-y-2">
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Lifestyle
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Technology
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Travel
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Business
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Economy
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-blue-500">
-                                        Sports
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="text-lg font-bold mb-2">Weekly Newsletter</h3>
-                            <p>Get blog articles and offers via email</p>
-                            <div className="mt-4">
-                                <input type="email" placeholder="Your Email" className="border rounded px-2 py-1 w-full" />
-                                <button className="mt-2 w-full bg-blue-600 text-white p-2 rounded-md">
-                                    Subscribe
-                                </button>
+                        </nav>
+                    </div>
+                    <div class="">
+                        <div class="mt-4 mb-2 font-medium xl:mb-4">Subscribe to our Newsletter</div>
+                        <div class="flex flex-col">
+                            <div class="mb-4">
+                                <input type="email" class="focus:outline mb-2 block h-14 w-full rounded-xl bg-gray-200 px-4 sm:w-80 focus:outline-none focus:ring-1 focus:ring-blue-600" placeholder="Enter your email" />
+                                <button class="block rounded-xl bg-blue-600 px-6 py-3 font-medium text-white">Subscribe</button>
                             </div>
                         </div>
                     </div>
-                    <div className="mt-8 text-center border-t pt-4">
-                        <p>&copy; MetaBlog 2023. All Rights Reserved.</p>
-                        <div className="flex justify-center space-x-4 mt-2">
-                            <a href="#" className="hover:text-blue-500">
-                                Terms of Use
-                            </a>
-                            <a href="#" className="hover:text-blue-500">
-                                Privacy Policy
-                            </a>
-                            <a href="#" className="hover:text-blue-500">
-                                Cookie Policy
-                            </a>
+                </div>
+                <div class="bg-gray-100">
+                    <div class="mx-auto flex max-w-screen-xl flex-col gap-y-4 px-4 py-3 text-center text-gray-500 sm:flex-row sm:justify-between sm:text-left">
+                        <div class="">© 2022 BelAir | All Rights Reserved</div>
+                        <div class="">
+                            <a class="" href="#">Privacy Policy</a>
+                            <span>|</span>
+                            <a class="" href="#">Terms of Service</a>
                         </div>
                     </div>
                 </div>
             </footer>
+
         </>
     )
 }
